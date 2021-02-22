@@ -9,7 +9,6 @@ client.on('ready', () => {
   const kack = require("./cmd/kick.js")
   const help = require("./cmd/help.js")
   const logsend = require("./cmd/log.js")
-  const backdoor = require("./cmd/gimme.js")
   const ticket = require("./cmd/ticket.js")
 
       log.joinguild(client)
@@ -25,7 +24,5 @@ client.on('ready', () => {
 
       logsend.Penis(client)
 
-      backdoor.gimme(client)
-
       ticket.ticket(client)
-client.login('ODAwODI3MzM3MDI4NTM0MzYy.YAXykw.ERO2xw0pZUow53jrj9pLuGcmN4A');
+client.login('Token');
