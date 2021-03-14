@@ -8,7 +8,7 @@ module.exports = {
                 const embed = new Discord.MessageEmbed()
                 .setTitle('Commands:')
                 .setColor(000000)
-                .setDescription('**!Attention!**\n\n**Prefix is !!**\n\n``!!help``\n_all cmds_\n\n``!!kick (@user)``\n_kicks the user_\n\n``!!ban (@user)``\n_bans the user_\n\n``!!log``\n_sends the log_\n\n``!!ticket``\n_creates a embed Message_');
+                .setDescription('**!Attention!**\n\n**Prefix is !!**\n\n``!!help``\n_all cmds_\n\n``!!kick (@user)``\n_kicks the user_\n\n``!!ban (@user)``\n_bans the user_\n\n``!!log``\n_sends the log_\n\n``!!ticket``\n_creates a embed Message_\n\n``How to set up Ticket Category``\nhttps://youtu.be/6GX-BkiUu6I');
                 message.channel.send(embed)
                 } catch (e) {console.error("Failed to create embed")}
             }
