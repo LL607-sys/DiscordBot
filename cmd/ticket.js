@@ -43,11 +43,12 @@ client.on("messageReactionAdd", (reaction, user) => {
     
           } else {
             var names = user.tag.substring(0, user.tag.length - 5);
-            //if he has not then it creates an new channel
+            let category = message.guild.channels.cache.find(cat=> cat.name === "Ticket")
+            var pen = category.id;
             message.guild.channels
               .create(names, {
                 type: "text",
-                parent: "811643384770986005",
+                parent: pen,
                 permissionOverwrites: [
                   {
                     id: userid,
@@ -87,8 +88,7 @@ client.on("messageReactionAdd", (reaction, user) => {
   if (emoji.name == '🔒') {
     fs.readFile("activeTickets.txt", async function (err, data) {
     if(!user.bot) {
-      if((fb.indexOf(message.channel.id.toString()) > -1)){
-          var names = user.tag.substring(0, user.tag.length - 5);
+      if((fb.indexOf(message.channel.id.toString()) > -1)){         
           var replace = "."
           const fetchchannel = message.channel;
           fetchchannel.delete();
